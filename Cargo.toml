@@ -9,18 +9,24 @@ vcell = "0.1.0"
 
 [dependencies.cortex-m]
 git = "https://github.com/rust-embedded/cortex-m"
+rev = "b70a2179f4e8ee7908b61a6a97970e0cfcf2f313"
 
 [dependencies.cortex-m-rt]
-git = "https://github.com/evq/cortex-m-rt"
-branch = "thumbv8m.base"
+git = "https://github.com/rust-embedded/cortex-m-rt"
+rev = "9cd01176a6a9985c9bc0040801ed593687dd6ab1"
 optional = true
 
 [dev-dependencies.cortex-m-rt]
-git = "https://github.com/evq/cortex-m-rt"
-branch = "thumbv8m.base"
+git = "https://github.com/rust-embedded/cortex-m-rt"
+rev = "9cd01176a6a9985c9bc0040801ed593687dd6ab1"
+
+[dev-dependencies.cortex-m-semihosting]
+git = "https://github.com/rust-embedded/cortex-m-semihosting"
+rev = "471378bc848172e12e22b9a3b83190747e70bf5c"
 
 [dev-dependencies.panic-semihosting]
 git = "https://github.com/evq/panic-semihosting"
+rev = "3d7041af24969f32606e5eb804e23eaac7fb0bfa"
 
 [features]
 rt = ["cortex-m-rt/device"]
