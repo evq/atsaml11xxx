@@ -1,0 +1,30 @@
+[package]
+authors = ["eV <ev@7pr.xyz>"]
+name = "atsaml11xxx"
+version = "0.1.0"
+
+[dependencies]
+bare-metal = "0.2.0"
+vcell = "0.1.0"
+
+[dependencies.cortex-m]
+git = "https://github.com/rust-embedded/cortex-m"
+
+[dependencies.cortex-m-rt]
+git = "https://github.com/evq/cortex-m-rt"
+branch = "thumbv8m.base"
+optional = true
+
+[dev-dependencies.cortex-m-rt]
+git = "https://github.com/evq/cortex-m-rt"
+branch = "thumbv8m.base"
+
+[dev-dependencies.panic-semihosting]
+git = "https://github.com/evq/panic-semihosting"
+
+[features]
+rt = ["cortex-m-rt/device"]
+
+[profile.release]
+debug = false
+lto = true

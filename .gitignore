@@ -1,0 +1,14 @@
+# Generic ignores
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+
+# Project specific ignores
+target
+ATSAML11E16A.svd
+.gdb_history
+.pc
+Cargo.lock

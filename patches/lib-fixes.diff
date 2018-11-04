@@ -1,0 +1,13 @@
+Index: atsaml11xxx/src/rtc/mod.rs
+===================================================================
+--- atsaml11xxx.orig/src/rtc/mod.rs
++++ atsaml11xxx/src/rtc/mod.rs
+@@ -122,7 +122,7 @@ pub struct MODE2 {
+     pub clock: self::mode2::CLOCK,
+     _reserved2: [u8; 4usize],
+     #[doc = "0x20 - MODE2 Alarm"]
+-    pub mode2_alarm0: MODE2_ALARM,
++    pub mode2_alarm0: self::mode2::MODE2_ALARM,
+     _reserved3: [u8; 27usize],
+     #[doc = "0x40 - General Purpose"]
+     pub gp: [self::mode2::GP; 2],

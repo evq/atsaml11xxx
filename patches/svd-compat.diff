@@ -1,0 +1,47 @@
+Index: atsaml11xxx/ATSAML11E16A.svd
+===================================================================
+--- atsaml11xxx.orig/ATSAML11E16A.svd
++++ atsaml11xxx/ATSAML11E16A.svd
+@@ -476,13 +476,8 @@ Copyright (c) 2017 Microchip Technology
+                            <value>6</value>
+                         </enumeratedValue>
+                         <enumeratedValue>
+-                           <name>OPAMP</name>
+-                           <description>OPAMP output (on AC1)</description>
+-                           <value>7</value>
+-                        </enumeratedValue>
+-                        <enumeratedValue>
+-                           <name>DAC</name>
+-                           <description>DAC output (on AC0)</description>
++                          <name>DAC / OPAMP</name>
++                          <description>DAC output (on AC0) / OPAMP output (on AC1)</description>
+                            <value>7</value>
+                         </enumeratedValue>
+                      </enumeratedValues>
+@@ -5043,7 +5038,7 @@ Copyright (c) 2017 Microchip Technology
+                <dim>8</dim>
+                <dimIncrement>0x8</dimIncrement>
+                <name>CHANNEL[%s]</name>
+-               <description/>
++               <description>Channel</description>
+                <addressOffset>0x020</addressOffset>
+                <register>
+                   <name>CHANNEL</name>
+@@ -10066,7 +10061,7 @@ Copyright (c) 2017 Microchip Technology
+                <dim>1</dim>
+                <dimIncrement>0x80</dimIncrement>
+                <name>GROUP[%s]</name>
+-               <description/>
++               <description>Port Group</description>
+                <addressOffset>0x00</addressOffset>
+                <register>
+                   <name>DIR</name>
+@@ -13420,7 +13415,7 @@ Copyright (c) 2017 Microchip Technology
+                   <dim>1</dim>
+                   <dimIncrement>0x8</dimIncrement>
+                   <name>MODE2_ALARM[%s]</name>
+-                  <description/>
++                  <description>MODE2 Alarm</description>
+                   <addressOffset>0x20</addressOffset>
+                   <register>
+                      <name>ALARM</name>

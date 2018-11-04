@@ -1,0 +1,8 @@
+[target.thumbv8m.base-none-eabi]
+runner = 'arm-none-eabi-gdb'
+rustflags = [
+  "-C", "link-arg=-Tram.x",
+]
+
+[build]
+target = "thumbv8m.base-none-eabi"
