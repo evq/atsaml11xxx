@@ -6,18 +6,22 @@ Peripheral access API for SAM L11 microcontrollers
 
 # WIP
 
-This crate is a work in progress. Building it either requires
-a xargo change or renaming the target spec due to the target
-naming convention used.
-
-https://github.com/japaric/xargo/pull/226
+This crate is a work in progress.
 
 ## Usage
 
 ### Building the blink example
 
+You'll need a recent Rust `nightly` build. Add the `thumbv8m.base-none-eabi` target:
+
 ```
-RUST_TARGET_PATH=`pwd` xargo build --release --target thumbv8m.base-none-eabi --example blink
+$ rustup target add thumbv8m.base-none-eabi
+```
+
+Then use cargo to build the example:
+
+```
+$ cargo build --release --example blink
 ```
 
 ### Programming blink example to FLASH on the SAM L11 XPLAINED dev board
